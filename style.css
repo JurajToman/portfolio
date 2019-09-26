@@ -1,0 +1,138 @@
+/*
+Theme Name: Esotera Child
+Theme URI: http://www.cryoutcreations.eu/wordpress-themes/esotera
+Template: esotera
+Author: Juraj Toman
+Author URI: http://www.cryoutcreations.eu
+Description: Colorful, clean and animated 
+Tags: portfolio, Jay jay studio, Juraj Toman, wordpress, Web design, Front-end developer, Zealand
+Version: 1.0.0.1569355066
+Updated: 2019-09-24 20:57:46
+
+*/
+
+.text-services {padding: 0px 20px} /* text in services section */
+
+h2.staticslider-caption-title {font-weight: 500 !important} /* name in banner */ 
+
+iframe {margin-left: 30px} /* map */
+
+.esotera-landing-page .lp-text-inside, .site-header-inside {
+  padding-left: 0 !important;
+  padding-right: 0 !important} /* whole website padding reset */
+
+a.staticslider-button:nth-child(2n) {border-color: yellow !important;} /* button in the banner // not active // */
+
+a.staticslider-button:nth-child(2n+1) {color: #FFAD01 !important; /* button in the banner / Active - contact me / */
+font-weight: 700 !important;}
+
+.lp-text-card {max-width: 1260px !important} /* width of sections */
+
+#lp-text-two, #lp-text-four {background-color: #28023D;} /* color of sections about and contact */
+
+.portfolio {margin-top: -60px !important; 
+/*padding-top: 40px;*/} 						/* portfolio */
+
+h3.meno {color: white !important;
+font-weight: 700 !important}					/* about section sub-heading // name */
+
+h3.lp-text-title {color: #FFAD01 !important;
+font-weight: 700 !important;
+margin-bottom: 0.8em !important;}				/* heading in sections */
+
+.about-text {color: white !important}			/* text in about section */
+
+img.wp-image-260 {margin-top: 35px}
+
+.wp-block-columns {margin-bottom: 0px !important}	/* column reset */
+.wp-block-image.is-resized {margin: auto}			/* images insade section reset */
+
+.wpforms-field-label {color: white !important}		/* labels in contact form */
+
+.submit-contact {background: transparent !important;	/* button in contact form */
+  color: #FFAD01 !important;
+border: 2px solid !important;
+border-radius: 100px !important;
+font-weight: 700 !important;
+  padding: 0.5em 2em !important;
+  font-size: 1.15em !important;
+}
+
+.servico {
+  max-width: 1260px;
+  width: 1260px;
+margin-top: 50px;}						/* serivce section */
+
+.contact-section {max-width: 1260px;
+  width: 1260px;
+  margin-top: 50px;}					/* contact section */
+/*
+.wp-block-image {margin-bottom: 3em;}		
+*/
+.projects-text {color: white}			
+/*
+.text-under-icon {margin-top: -30px}*/	/* text under icons in contact */
+
+/* 1st media querry */
+@media only screen and (max-width: 1260px) {			
+  .servico, .contact-section {
+  width: 950px;
+  }
+  .portfolio {margin-top: -80px !important}
+  .icon-menu::before {margin-right: 20px} /* burger menu icon */
+  #branding {margin-left: 20px} /* logo */
+  .about-text {padding-right: 40px;}
+  .text-under-icon {font-size: 16px !important;}
+}
+
+/* 2nd media querry */
+@media only screen and (max-width: 980px) {
+  .servico {width: auto;}
+  .portfolio {margin-top: -100px !important}
+  .about-text { padding:0px 30px}
+  .contact-section {max-width: 750px;
+ 	width: auto;
+  	display: block}/* contact section modify */
+  	iframe {margin-left: 0px;} /* map reset */
+  .lp-staticslider, .staticslider-caption-inside {margin: auto;} /* banner text */
+  /*.text-under-icon {margin-top: -20px}*/
+}
+
+/* 3rd media querry */
+@media only screen and (max-width: 787px) {
+
+  .wp-block-column:nth-child(2n) {margin-left: 0 !important} /* child inside column reset from original css */
+  .servico {display: block}
+  .portfolio {margin-top: -80px !important}
+  h3.meno {text-align: center;}
+  .wp-block-image.is-resized {margin: auto} /* image inside about section */
+  .submit-contact {display: block !important; margin: auto !important;}
+  .text-services, .about-text {padding: 0px 30px}
+  iframe {margin-left: 0px} /* map */
+}
+
+/* 4th media querry */
+@media only screen and (max-width: 500px) {
+  .contact-section {width: auto}
+  .portfolio {margin-top: -110px !important}
+  .text-services {padding: 0px 30px;
+  margin-bottom: 3em !important}
+  .about-text {padding: 0px 30px}
+  .meno {text-align: left !important;
+    padding-left: 30px;}
+  .services-img img {width: 125px; height: 125px;} /* icons insade service section */
+  .wp-block-columns {display:block}
+    
+}
+
+/* Reset from original css, margin between columns */
+.wp-block-column:nth-child(2n) {
+         margin-left:0px 
+    }
+
+@media (min-width: 782px) {
+    .wp-block-column:not(:first-child) {
+        margin-left:0px; 
+    }
+}
+
